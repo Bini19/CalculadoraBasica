@@ -10,13 +10,9 @@ namespace CalculadoraTeste01
     {
         static void Main(string[] args)
         {
-
-            double valor1;
-            double valor2;
-            double total;
-
-
-
+//você pode declarar mais de uma variavel do mesmo tipo de uma vez só
+            double valor1,valor2,total;
+            
             Console.Write("Digite o valor 1: ");
 
             valor1 = Convert.ToDouble( Console.ReadLine() );
@@ -26,9 +22,10 @@ namespace CalculadoraTeste01
             valor2 = Convert.ToDouble( Console.ReadLine() );
             total = valor1 + valor2;
 
-
-            Console.Write("Resultado dasoma é: " + total);
-
+//você pode mostrar o resultado sem usar +, o resultado pode aparecer em qualquer lugar da frase, ele vai substituir o {0}
+            Console.Write("Resultado dasoma é: {0} ",total);
+//como agora (na próxima linha), o resultado pode aparecer no começo
+            Console.Write("{0} é o resultado ",total);
             Console.ReadKey();
 
 
